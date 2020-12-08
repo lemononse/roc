@@ -121,8 +121,8 @@ func (m *ServBaseV2) isStop() bool {
 // Stop server stop
 func (m *ServBaseV2) Stop() {
 	m.setStatusToStop()
-	m.clearRegisterInfos()
-	m.clearCrossDCRegisterInfos()
+	//m.clearRegisterInfos()
+	//m.clearCrossDCRegisterInfos()
 	m.onShutdown()
 }
 
